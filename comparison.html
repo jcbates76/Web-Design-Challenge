@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <!-- Comparison page.
 Contains all of the visualizations on the same page.
 Uses a Bootstrap grid for the visualizations. -->
@@ -11,45 +14,135 @@ Uses a Bootstrap grid for the visualizations. -->
   
   </head>
 
+  <body>
+    <nav class="nav navbar navbar-expand-lg">
+        <div class="container">
+            <a class="nav-font navbar-brand" href="index.html">Latitude vs. X</a>
+            
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle Navigation">
+                
+                <span class="navbar-toggler-icon"></span>
+            
+            </button>
 
-<body>
-    <div class="container">
-        
-        <!-- Navigation -->
-        <div class="row">
-            <div class="col-6">
-              <a href="index.html"><h1 class="text-left">Navigation Bar</h1></a>
-            </div>
-            <div class="col-2">
-            </div>
-            <div class="col-4">
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Visualizations
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="visualization_1.html">Temp_Lat</a></li>
-                  <li><a class="dropdown-item" href="visualization_2.html">Humidity_Lat</a></li>
-                  <li><a class="dropdown-item" href="visualization_3.html">Clouds_Lat</a></li>
-                  <li><a class="dropdown-item" href="visualization_4.html">Wind_Lat</a></li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-font nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                            Visualizations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="visualization_1.html">
+                                    Temp vs. Latitude
+                                </a>
+                             </li>
+                             <li>
+                                <a class="dropdown-item" href="visualization_2.html">
+                                    Humidity vs. Latitude
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="visualization_3.html">
+                                   Coudiness vs. Latitude
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="visualization_4.html">
+                                  Wind vs. Latitude
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-font nav-link active" aria-current="page" href="comparison.html">
+                            Comparisons
+                        </a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-font nav-link active" aria-current="page" href="data.html">
+                            Data
+                        </a>
+                    </li>
                 </ul>
-                <a href="comparison.html" ><button type="button" class="btn btn-secondary" >Comparisons</button></a>
-                <a href="data.html"><button type="button" class="btn btn-secondary">Data</button></a>
-              </div>
-            </div>
-          </div>
-          
-        <div class="row">
-            <div class="col-12">
-                <h1>Comparison</h1>
-            </div>
-        </div>
 
+            </div>
+
+        </div>     
+    </nav>
+     
+    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <p>Click on any chart to get an in-depth analysis</p>
+            <div class="col-lg-12">
+                <h1 class="text-left">Comparison of Impacts of Latitude</h1>
+                <hr>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Click on any chart to get an in-depth analysis.<p>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <p></p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <h4>Temperature vs. Latitude</h4>
+                <a href="visualization_1.html"><img src="Visualizations/Temp_Lat.png" class="img-fluid"></a>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <h4>Cloudiness vs. Latitude</h4>
+                <a href="visualization_3.html"> <img src="Visualizations/Clouds_Lat.png" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <p></p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <h4>Humidity vs. Latitude</h4>
+                <a href="visualization_2.html"> <img src="Visualizations/Humidity_Lat.png" class="img-fluid"></a>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <h4>Wind vs. Latitude</h4><
+                <a href="visualization_4.html"> <img src="Visualizations/Wind_Lat.png" class="img-fluid"></a>
+            </div>
+        </div>
+        
+        
+        
+    </div>      
+          
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
+<!-- 
+<!-- 
+
+
+<
+          
+        
+
+        
 
         <div class="row">
             
@@ -87,4 +180,4 @@ Uses a Bootstrap grid for the visualizations. -->
 
 
 
-</body>
+</body> --> -->
