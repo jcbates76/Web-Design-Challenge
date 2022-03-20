@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Visualization page 3.
-Descriptive title & heading tag.
-Plot/visualization itself for the selected comparison.
-Paragraph describing the plot and its significance. -->
+<!-- Comparison page.
+Contains all of the visualizations on the same page.
+Uses a Bootstrap grid for the visualizations. -->
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +15,7 @@ Paragraph describing the plot and its significance. -->
   </head>
 
   <body>
-    <nav class="nav navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: navy;">
         <div class="container">
             <a class="nav-font navbar-brand" href="index.html">Latitude vs. X</a>
             
@@ -29,12 +28,13 @@ Paragraph describing the plot and its significance. -->
               aria-expanded="false" 
               aria-label="Toggle Navigation">
                 
-                <span class="navbar-toggler-icon"></span>
+                <span class="hamburger navbar-toggler-icon">
+                </span>
             
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="hamburger navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-font nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
                             Visualizations
@@ -75,44 +75,57 @@ Paragraph describing the plot and its significance. -->
                         </a>
                     </li>
                 </ul>
-
+    
             </div>
-
+    
         </div>     
-    </nav>
+      </nav>
      
     <div class="container">
-      <div class="row">
-         <div class="col-lg-10">
-            <h1 class="text-left">Cloudiness vs. Latitude</h1>
-            <hr>
-            <img src="Visualizations/Clouds_Lat.png" class="img-size-main img-fluid" align="left">
-                
-            <p>This should be a paragraph going into the summary of the temperature vs. latitude graph.  
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-                This should be a paragraph going into the summary of the temperature vs. latitude graph.
-            </p>
-            <p></p>
-            <p></p>
-        </div>
-            <div class="col-lg-2">
-              <h5 class="text-center">Visualizations</h5>
-              <hr>
-              <p></p>
-              <a href="visualization_1.html"><img src="Visualizations/Temp_Lat.png" class="img-thumbnail side-images"></a>
-              <a href="visualization_2.html"> <img src="Visualizations/Humidity_Lat.png" class="img-thumbnail side-images"></a>
-              <a href="visualization_3.html"> <img src="Visualizations/Clouds_Lat.png" class="img-thumbnail side-images"></a>
-              <a href="visualization_4.html"> <img src="Visualizations/Wind_Lat.png" class="img-thumbnail side-images"></a>
-          
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-left">Comparison of Impacts of Latitude</h1>
+                <hr>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Click on any chart to get an in-depth analysis.<p>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <p></p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <h4>Temperature vs. Latitude</h4>
+                <a href="visualization_1.html"><img src="../Visualizations/Temp_Lat.png" class="img-fluid"></a>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <h4>Cloudiness vs. Latitude</h4>
+                <a href="visualization_3.html"> <img src="../Visualizations/Clouds_Lat.png" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <p></p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <h4>Humidity vs. Latitude</h4>
+                <a href="visualization_2.html"> <img src="../Visualizations/Humidity_Lat.png" class="img-fluid"></a>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <h4>Wind vs. Latitude</h4><
+                <a href="visualization_4.html"> <img src="../Visualizations/Wind_Lat.png" class="img-fluid"></a>
+            </div>
+        </div>
+        
+        
+        
     </div>      
           
 
@@ -122,3 +135,50 @@ Paragraph describing the plot and its significance. -->
   
   </body>
 </html>
+<!-- 
+<!-- 
+
+
+<
+          
+        
+
+        
+
+        <div class="row">
+            
+            <div class="col-6">
+                <h3 class="text-center">Title 1</h3>
+                <a href="visualization_1.html"><img src="Visualizations/Temp_Lat.png" class="img-fluid center-block"></a>
+            </div>
+
+            <div class="col-6">
+                <h3 class="text-center">Title 2</h3>
+                <a href="visualization_3.html"> <img src="Visualizations/Clouds_Lat.png" class="img-fluid center-block"></a>
+            </div>
+        
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h3 class="text-center">Title 3</h3>
+                <a href="visualization_2.html"> <img src="Visualizations/Humidity_Lat.png" class="img-fluid center-block"></a>
+            </div>
+
+            <div class="col-6">
+                <h3 class="text-center">Title 4</h3>
+                <a href="visualization_4.html"> <img src="Visualizations/Wind_Lat.png" class="img-fluid center-block"></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body> --> -->

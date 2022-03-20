@@ -1,8 +1,0 @@
-Open Questions
-- Look at why the index is left justified but the visualization pages have a buffer
-- How to right justify the buttons on the menu bar
-
-Next Steps
-- Build the comparison page.
-- Build the data page.  
-
